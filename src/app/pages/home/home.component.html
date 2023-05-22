@@ -1,4 +1,4 @@
-<section id="home">
+<!-- <section id="home">
   <div class="container">
     <div class="row">
       <div class="col">
@@ -15,6 +15,23 @@
             </p>
             <a href="#" class="btn btn-primary">Send mail</a>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section id="product-list">
+  <div class="container">
+    <div class="row">
+      <div class="col-4" *ngFor="let product of products">
+        <div class="product-item">
+          <div class="img-product">
+            <img src="{{ product.imgUrl }}" alt="{{ product.name }}" />
+          </div>
+          <h3>{{ product.name }}</h3>
+          <div class="desc">{{ product.desc }}</div>
+          <div class="price">{{ product.price }}</div>
         </div>
       </div>
     </div>
